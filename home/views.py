@@ -13,3 +13,6 @@ def index(request):
         
      } 
     return render(request,'index.html',context)
+
+def search(request):
+    return render(request,'search.html')
