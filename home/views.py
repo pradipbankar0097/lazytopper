@@ -20,7 +20,10 @@ def index(request):
     return render(request,'index.html',context)
 
 def search(request):
-    return render(request,'search.html')
+    results = {'first':'here starts the results'}
+    if request == "GET":
+        pass
+    return render(request,'search.html',results)
 
 def login(request):
     if request.method == "POST":
